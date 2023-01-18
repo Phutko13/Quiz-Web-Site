@@ -1,0 +1,159 @@
+body {
+  background: linear-gradient(132deg, #fc415a, #591bc5, #212335);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+main {
+  height: 500px;
+  width: 90%;
+  margin: 150px auto;
+}
+
+main .questionList ul {
+  list-style: none;
+  padding: 0px;
+}
+
+main .questionList ul li {
+  height: 40px;
+}
+
+/* scroll */
+
+.questionList::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+.questionList::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgb(102, 37, 133)),
+    color-stop(0.72, rgb(106, 56, 129)),
+    color-stop(0.86, rgb(150, 78, 184))
+  );
+}
+
+.questionList {
+  display: inline-block;
+  width: 15%;
+  height: 300px;
+  overflow: auto;
+  cursor: pointer;
+  overflow-y: scroll;
+}
+.displayQuestion {
+  width: 85%;
+  float: right;
+  margin-top: 35px;
+}
+
+.displayQuestion p {
+  text-align: center;
+  font-weight: 500px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 30px;
+}
+
+.container {
+  margin-left: 100px;
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+}
+
+.checkbox {
+  font-size: 40px;
+}
+
+.buttons {
+  float: right;
+}
+
+.buttons button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttons .back {
+  background-color: red;
+}
+
+.buttons .front {
+  background-color: green;
+}
+
+.containerQuestions label {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.questionList ul li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.questionList ul li:hover {
+  background-color: grey;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: 1s;
+}
+
+/* .sumbit {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: blue;
+    margin-left: 100px;
+} */
+
+.clear {
+  background-color: yellowgreen;
+}
+
+.finish {
+  text-align: center;
+  font-size: 40px;
+}
+
+.finishing {
+  background-color: tomato;
+}
+.displayQuestion {
+  display: block;
+}
